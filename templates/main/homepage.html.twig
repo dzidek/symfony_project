@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} Hello from child{% endblock %}
+
+{% block body %}
+
+  <h1><strong>Hello</hello> world!</h1>
+
+  <div>
+    Browse through {{ numberOfStarships }}
+
+    {% if numberOfStarships >= 400 %}
+      <p>A lot of starships!</p>
+    {% endif %}
+  </div>
+
+  <div>
+
+    <h2>mu ship</h2>
+
+    <table>
+      <tr>
+        <td>{{ myShip.name | upper }}</td>
+      </tr>
+    </table>
+
+  </div>
+
+{% endblock %}
